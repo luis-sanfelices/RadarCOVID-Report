@@ -17,9 +17,10 @@ jobs:
         run: |
           python3 -m pip install -r requirements.txt
           python3 -m pip install -r requirements-notebook.txt
-      - uses: yaananth/run-notebook@v1
-        with:
-          notebook: "RadarCOVID-Report.ipynb"
+          python3 -m pip install papermill
+      - name: Report Update
+        run: |
+          python3 -m papermill.cli RadarCOVID-Report.ipynb RadarCOVID-Report.ipynb
       - name: Commit Report Update
         uses: EndBug/add-and-commit@v4
         with:
