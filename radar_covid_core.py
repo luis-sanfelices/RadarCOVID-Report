@@ -14,16 +14,10 @@ import requests
 import TemporaryExposureKeyExport_pb2
 import radar_covid_exceptions
 
-radar_covid_api_endpoint_base_url = "https://radarcovid.covid19.gob.es/"
-radar_covid_api_endpoint_exposed_tokens_url = radar_covid_api_endpoint_base_url + "dp3t/v1/gaen/exposed/"
+_radar_covid_api_endpoint_base_url = "https://radarcovid.covid19.gob.es/"
+_radar_covid_api_endpoint_exposed_tokens_url = _radar_covid_api_endpoint_base_url + "dp3t/v1/gaen/exposed/"
 
-logging.basicConfig(level="INFO")
-
-unix_epoch_datetime = datetime.datetime(year=1970, month=1, day=1, tzinfo=pytz.utc)
-
-temporary_directory = tempfile.gettempdir()
-temporary_directory_uuid = str(uuid.uuid4()).upper()
-temporary_directory = os.path.join(temporary_directory, temporary_directory_uuid)
+_unix_epoch_datetime = datetime.datetime(year=1970, month=1, day=1, tzinfo=pytz.utc)
 
 
 def download_radar_covid_exposure_keys(date: datetime.datetime) -> pd.DataFrame:
@@ -33,11 +27,15 @@ def download_radar_covid_exposure_keys(date: datetime.datetime) -> pd.DataFrame:
         day=date.day,
         tzinfo=pytz.utc)
     sample_date_string = sample_datetime.strftime("%Y-%m-%d")
+
+    temporary_directory = tempfile.gettempdir()
+    temporary_directory_uuid = str(uuid.uuid4()).upper()
+    temporary_directory = os.path.join(temporary_directory, temporary_directory_uuid)
     sample_date_temporary_directory = os.path.join(temporary_directory, sample_date_string)
 
     date_exposed_tokens_url = \
-        radar_covid_api_endpoint_exposed_tokens_url + str(
-            int((sample_datetime - unix_epoch_datetime).total_seconds())) + "000"
+        _radar_covid_api_endpoint_exposed_tokens_url + str(
+            int((sample_datetime - _unix_epoch_datetime).total_seconds())) + "000"
     logging.info(
         f"Downloading exposed tokens for day '{sample_date_string}' from '{date_exposed_tokens_url}'...")
     date_exposed_tokens_response = requests.get(url=date_exposed_tokens_url)
