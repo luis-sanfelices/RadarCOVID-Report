@@ -17,7 +17,8 @@ jobs:
         run: |
           python3 -m pip install -r requirements.txt
           python3 -m pip install -r requirements-notebook.txt
-          python3 -m pip install papermill
+          python3 -m pip install papermill ipykernel nbformat nbconvert
+          python3 -m ipykernel install --user
       - name: Report Update
         run: |
           python3 -m papermill.cli RadarCOVID-Report.ipynb RadarCOVID-Report.ipynb
