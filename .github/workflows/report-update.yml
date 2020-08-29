@@ -1,6 +1,9 @@
 name: Report Update
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron:  '* */6 * * *'
 
