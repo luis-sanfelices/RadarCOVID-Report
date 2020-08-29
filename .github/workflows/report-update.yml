@@ -1,11 +1,10 @@
 name: Report Update
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron:  '0 */6 * * *'
+  - push
+  - pull_request
+  - schedule:
+      - cron:  '0 */6 * * *'
 
 jobs:
   report-update:
