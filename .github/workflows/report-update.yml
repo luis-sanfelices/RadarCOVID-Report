@@ -12,14 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
       - name: Install Dependencies
         run: |
-          sudo apt-get install python3-setuptools
-          python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt
           python3 -m pip install -r requirements-notebook.txt
-      - name: Report Update
-        run: python3 -m jupyter nbconvert --to notebook --execute RadarCOVID-Report.ipynb
+      - uses: yaananth/run-notebook@v1
+        with:
+          notebook: "RadarCOVID-Report.ipynb"
       - name: Commit Report Update
         uses: EndBug/add-and-commit@v4
         with:
