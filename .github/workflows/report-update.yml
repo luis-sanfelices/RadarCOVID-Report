@@ -28,8 +28,4 @@ jobs:
         uses: EndBug/add-and-commit@v4
         with:
           author_name: GitHub Action - Report Update
-          author_email: report-update@action.github.com
           message: "[RadarCOVID-Report] Updated Report"
-          add: "*.ipynb"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
