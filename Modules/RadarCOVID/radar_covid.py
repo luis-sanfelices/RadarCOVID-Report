@@ -11,8 +11,8 @@ import pandas as pd
 import pytz
 import requests
 
-import TemporaryExposureKeyExport_pb2
-import radar_covid_exceptions
+from . import TemporaryExposureKeyExport_pb2
+from . import radar_covid_exceptions
 
 _radar_covid_api_endpoint_base_url = "https://radarcovid.covid19.gob.es/"
 _radar_covid_api_endpoint_exposed_tokens_url = _radar_covid_api_endpoint_base_url + "dp3t/v1/gaen/exposed/"

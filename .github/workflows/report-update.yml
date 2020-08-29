@@ -22,6 +22,8 @@ jobs:
       - name: Report Update
         run: |
           python3 -m papermill.cli RadarCOVID-Report.ipynb RadarCOVID-Report.ipynb
+          mkdir -p Notebooks
+          cp RadarCOVID-Report.ipynb Notebooks/RadarCOVID-Report-`date --utc +%F`.ipynb
       - name: Commit Report Update
         uses: EndBug/add-and-commit@v4
         with:
