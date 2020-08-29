@@ -98,10 +98,14 @@ def download_radar_covid_exposure_keys(date: datetime.datetime) -> pd.DataFrame:
     return pd.DataFrame.from_records(date_temporary_exposure_keys)
 
 
-def download_last_radar_covid_exposure_keys() -> Any:
+def download_last_radar_covid_exposure_keys(days=None) -> Any:
+    if days is None:
+        days = 14
+
     exposure_keys_df = pd.DataFrame()
     now_datetime = datetime.datetime.utcnow()
-    for i in range(14):
+
+    for i in range(days):
         try:
             sample_datetime = now_datetime - datetime.timedelta(days=i)
             date_exposure_keys_df = download_radar_covid_exposure_keys(date=sample_datetime)
@@ -110,4 +114,5 @@ def download_last_radar_covid_exposure_keys() -> Any:
             logging.warning(repr(e))
         except Exception as e:
             logging.warning(repr(e), exc_info=True)
+
     return exposure_keys_df
