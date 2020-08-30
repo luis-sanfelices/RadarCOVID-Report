@@ -30,3 +30,10 @@ jobs:
           author_name: GitHub Action - Report Update
           author_email: report-update@action.github.com
           message: "[RadarCOVID-Report] Updated Report"
+      - name: Share Report Update
+          run: |
+            python3 -m pip install -r Extra/requirements-share.txt
+            python3 -m Scripts/RadarCOVID-ShareReport.py
+          env:
+            RADARCOVID_REPORT__ENABLE_SHARE_TO_TWITTER: TRUE
+            RADARCOVID_REPORT__TWITTER_API_AUTH_KEYS: ${{ secrets.RADARCOVID_REPORT__TWITTER_API_AUTH_KEYS }}
