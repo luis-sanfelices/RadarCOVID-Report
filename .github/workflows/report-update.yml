@@ -31,9 +31,10 @@ jobs:
           author_email: report-update@action.github.com
           message: "[RadarCOVID-Report] Updated Report"
       - name: Share Report Update
+        if: ${{ github.event_name == 'schedule' }}
         run: |
           python3 -m pip install -r Extra/requirements-share.txt
           python3 Scripts/RadarCOVID-ShareReport.py
         env:
-          RADARCOVID_REPORT__ENABLE_SHARE_TO_TWITTER: TRUE
+          RADARCOVID_REPORT__ENABLE_SHARE_TO_TWITTER: "TRUE"
           RADARCOVID_REPORT__TWITTER_API_AUTH_KEYS: ${{ secrets.RADARCOVID_REPORT__TWITTER_API_AUTH_KEYS }}
