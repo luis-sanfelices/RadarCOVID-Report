@@ -12,9 +12,11 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
 
 ## Last Results
 
+- [Report {extraction_date_with_hour}]({report_url_with_hour})
+
 ### Summary Table
 
-${summary_table_html}
+{summary_table_html}
 
 - [Summary Table File](https://github.com/pvieito/RadarCOVID-Report/blob/master/Data/Resources/Current/RadarCOVID-Report-Summary-Table.csv)
 
