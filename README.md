@@ -12,6 +12,8 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
 
 ## Last Results
 
+- [Report 2020-08-31@19](https://github.com/pvieito/RadarCOVID-Report/blob/master/Notebooks/RadarCOVID-Report/Hourly/RadarCOVID-Report-2020-08-31@19.ipynb)
+
 ### Summary Table
 
 <table border="1" class="dataframe">
@@ -46,19 +48,19 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-31</th>
       <td>NaN</td>
       <td>34.0</td>
+      <td>7604.571429</td>
+      <td>7604.571429</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.004471</td>
       <td>19.0</td>
-      <td>NaN</td>
+      <td>0.002498</td>
       <td>1.789474</td>
     </tr>
     <tr>
       <th>2020-08-30</th>
       <td>19.0</td>
       <td>29.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>7604.571429</td>
       <td>0.002498</td>
       <td>0.003813</td>
@@ -70,7 +72,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-29</th>
       <td>21.0</td>
       <td>NaN</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>7604.571429</td>
       <td>0.002761</td>
       <td>NaN</td>
@@ -82,7 +84,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-28</th>
       <td>36.0</td>
       <td>NaN</td>
-      <td>9779.0</td>
+      <td>9779.000000</td>
       <td>7604.571429</td>
       <td>0.004734</td>
       <td>NaN</td>
@@ -94,7 +96,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-27</th>
       <td>60.0</td>
       <td>NaN</td>
-      <td>9658.0</td>
+      <td>9658.000000</td>
       <td>7371.571429</td>
       <td>0.008139</td>
       <td>NaN</td>
@@ -106,7 +108,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-26</th>
       <td>71.0</td>
       <td>NaN</td>
-      <td>7296.0</td>
+      <td>7296.000000</td>
       <td>6997.428571</td>
       <td>0.010147</td>
       <td>NaN</td>
@@ -118,7 +120,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-25</th>
       <td>58.0</td>
       <td>NaN</td>
-      <td>7117.0</td>
+      <td>7117.000000</td>
       <td>6908.142857</td>
       <td>0.008396</td>
       <td>NaN</td>
@@ -130,7 +132,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-24</th>
       <td>48.0</td>
       <td>NaN</td>
-      <td>19382.0</td>
+      <td>19382.000000</td>
       <td>6622.000000</td>
       <td>0.007249</td>
       <td>NaN</td>
@@ -142,7 +144,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-23</th>
       <td>28.0</td>
       <td>NaN</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>6177.285714</td>
       <td>0.004533</td>
       <td>NaN</td>
@@ -154,7 +156,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-22</th>
       <td>18.0</td>
       <td>NaN</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>6177.285714</td>
       <td>0.002914</td>
       <td>NaN</td>
@@ -166,7 +168,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-21</th>
       <td>11.0</td>
       <td>NaN</td>
-      <td>8148.0</td>
+      <td>8148.000000</td>
       <td>6177.285714</td>
       <td>0.001781</td>
       <td>NaN</td>
@@ -178,7 +180,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-20</th>
       <td>4.0</td>
       <td>NaN</td>
-      <td>7039.0</td>
+      <td>7039.000000</td>
       <td>5796.000000</td>
       <td>0.000690</td>
       <td>NaN</td>
@@ -190,7 +192,7 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
       <th>2020-08-19</th>
       <td>1.0</td>
       <td>NaN</td>
-      <td>6671.0</td>
+      <td>6671.000000</td>
       <td>5869.000000</td>
       <td>0.000170</td>
       <td>NaN</td>
