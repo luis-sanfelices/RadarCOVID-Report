@@ -7,5 +7,5 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
 ## Links
 
 - [Last Report](https://github.com/pvieito/RadarCOVID-Report/blob/master/RadarCOVID-Report.ipynb) 
-- [Daily Reports](https://github.com/pvieito/RadarCOVID-Report/tree/master/Notebooks)
+- [Archived Reports](https://github.com/pvieito/RadarCOVID-Report/tree/master/Notebooks/RadarCOVID-Report)
 - [TEK Dumps](https://github.com/pvieito/RadarCOVID-Report/tree/master/Data/TEKs)

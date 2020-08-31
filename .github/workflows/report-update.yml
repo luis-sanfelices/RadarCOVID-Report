@@ -21,8 +21,9 @@ jobs:
           python3 -m ipykernel install --user
       - name: Report Update
         run: |
-          python3 -m papermill.cli Notebooks/RadarCOVID-Report.ipynb RadarCOVID-Report.ipynb
-          cp RadarCOVID-Report.ipynb Notebooks/RadarCOVID-Report-`date --utc +%F`.ipynb
+          python3 -m papermill.cli Notebooks/RadarCOVID-Report/Source/RadarCOVID-Report.ipynb RadarCOVID-Report.ipynb
+          cp RadarCOVID-Report.ipynb Notebooks/RadarCOVID-Report/Daily/RadarCOVID-Report-`date --utc +%F`.ipynb
+          cp RadarCOVID-Report.ipynb Notebooks/RadarCOVID-Report/Hourly/RadarCOVID-Report-`date --utc +%F@%H`.ipynb
         env:
           RADARCOVID_REPORT__ENABLE_SHARE_TO_TWITTER: "TRUE"
           RADARCOVID_REPORT__TWITTER_API_AUTH_KEYS: ${{ secrets.RADARCOVID_REPORT__TWITTER_API_AUTH_KEYS }}
