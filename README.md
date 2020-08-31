@@ -14,8 +14,8 @@ Project to monitor and report the Temporary Exposure Keys (TEKs) from Spain's â€
 
 ### Summary Table
 
-![RadarCOVID-Report-Summary-Table](https://raw.githubusercontent.com/pvieito/RadarCOVID-Report/master/Resources/Current/RadarCOVID-Report-Summary-Table.png)
+![RadarCOVID-Report-Summary-Table](https://github.com/pvieito/RadarCOVID-Report/raw/master/Data/Resources/Current/RadarCOVID-Report-Summary-Table.png)
 
 ### Summary Plot
 
-![RadarCOVID-Report-Summary-Plot](https://raw.githubusercontent.com/pvieito/RadarCOVID-Report/master/Resources/Current/RadarCOVID-Report-Summary-Plots.png)
+![RadarCOVID-Report-Summary-Plot](https://github.com/pvieito/RadarCOVID-Report/raw/master/Data/Resources/Current/RadarCOVID-Report-Summary-Table.png)
